@@ -305,7 +305,7 @@ function updateUI(){
   let u = localStorage.getItem("session");
 
   userPanel.innerHTML = u
-  ? `👤 ${u} <button onclick="logout()">Salir</button>`
+  ? ` ${u} <button onclick="logout()">Salir</button>`
   : "No logueado";
 }
 
