@@ -71,7 +71,7 @@ section {
   margin-bottom: 30px;
 }
 
-/* LOGIN */
+
 input {
   display: block;
   margin: 10px 0;
@@ -88,7 +88,7 @@ button {
   cursor: pointer;
 }
 
-/* SERVICIOS */
+
 .servicio {
   background: #1e293b;
   padding: 15px;
@@ -224,7 +224,7 @@ Para el año 2030, Ruboost.gg aspira a consolidarse como una de las plataformas 
 
 </section>
 
-<!-- LOGIN -->
+
 <section id="login">
 
 <div class="caja">
@@ -242,7 +242,7 @@ Para el año 2030, Ruboost.gg aspira a consolidarse como una de las plataformas 
 
 <script>
 
-// NAVEGACIÓN
+
 function show(id){
   document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
   document.getElementById(id).classList.add("active");
@@ -263,7 +263,7 @@ function register(){
   alert("Registrado");
 }
 
-// LOGIN
+
 function login(){
   let u = user.value;
   let p = pass.value;
@@ -283,13 +283,13 @@ function login(){
   show("inicio");
 }
 
-// LOGOUT
+
 function logout(){
   localStorage.removeItem("session");
   updateUI();
 }
 
-// COMPRAR
+
 function comprar(servicio){
   let user = localStorage.getItem("session");
 
@@ -300,7 +300,7 @@ function comprar(servicio){
   alert("Compraste: " + servicio);
 }
 
-// UI
+
 function updateUI(){
   let u = localStorage.getItem("session");
 
